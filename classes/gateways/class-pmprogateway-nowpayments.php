@@ -512,7 +512,6 @@ class PMProGateway_Nowpayments extends PMProGateway {
 
 		pmpro_changeMembershipLevel( $order->membership_id, $order->user_id );
 		do_action( 'pmpro_after_checkout', $order->user_id, $order );
-		do_action( 'nowpayments_pmp_payment_confirmed', $order, $data );
 	}
 
 	/**
